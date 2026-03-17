@@ -1,28 +1,10 @@
-# Python
 __pycache__/
 *.py[cod]
-*.pyd
-*.pyo
-.Python
 .venv/
 venv/
 env/
 
-# Build / packaging
-build/
-dist/
-*.spec
-
-# Local/portable delivery folders (generated)
-XPS_UPS_便携/
-XPS_UPS_��Я/
-
-# Archives / exports
-*.zip
-
-# OS / IDE
-.DS_Store
-Thumbs.db
+# IDE
 .vscode/
 .idea/
 

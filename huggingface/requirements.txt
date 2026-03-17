@@ -1,6 +1,0 @@
-# Hugging Face Space: 不在此处指定 gradio，由 Space 自动注入，避免构建冲突
-numpy>=1.24,<3
-pandas>=2.0
-matplotlib>=3.7
-Pillow
-igor2

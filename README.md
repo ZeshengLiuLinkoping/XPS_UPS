@@ -1,26 +1,21 @@
-# XPS_UPS (UPS IBW Processor)
+# XPS_UPS
 
-用于处理 UPS 的 `.ibw` 数据：预览绘图、计算功函数、导出 CSV/PNG。
+一个包含两个模块的光电子谱小工具：
 
-## 运行（Windows）
+- **UPS 模块**：SECO/功函数（φ）识别，含 HOMO 拼接图预览与导出
+- **XPS 模块**：分峰拟合（Pseudo-Voigt + Linear/Shirley 背景），可给出常见官能团/化学态提示
 
-- **方式 B（对方电脑已安装 Python / Anaconda）**
-  - 进入本项目文件夹，双击 `运行.bat`
-  - 或在该文件夹打开终端运行：`python XPS_UPS.py`
+## 运行
 
-- **方式 A（推荐：解压即用、对方无需安装 Python）**
-  - 参考 `README_发给别人怎么跑.md`
+在本目录运行：
 
-## 依赖
-
-```text
-numpy
-matplotlib
-igor2
-pandas
+```bash
+python XPS_UPS.py
 ```
 
-安装方式：
+启动后先选择 **UPS** 或 **XPS** 模块。
+
+## 依赖
 
 ```bash
 pip install -r requirements.txt
