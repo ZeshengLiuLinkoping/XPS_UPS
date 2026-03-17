@@ -1,0 +1,64 @@
+============================================
+  简单安装 Python 和本程序需要的库
+  （给第一次用 Python 的人）
+============================================
+
+一、安装 Python
+---------------
+
+方法 A：官网安装（推荐）
+  1. 打开浏览器，打开： https://www.python.org/downloads/
+  2. 点击黄色的「Download Python 3.x.x」按钮下载。
+  3. 双击下载好的安装包。
+  4. 第一页务必勾选：「Add python.exe to PATH」。
+  5. 然后点「Install Now」，按提示完成安装。
+  6. 安装完成后，关掉所有已打开的命令行窗口（如有）。
+
+方法 B：微软商店安装
+  1. 按 Win 键，搜索「Microsoft Store」并打开。
+  2. 在商店里搜索「Python 3.11」或「Python 3.12」。
+  3. 选择微软官方的 Python，点「获取/安装」。
+  4. 安装完成后即可（一般会自动加入 PATH）。
+
+
+二、安装本程序必须的库
+---------------------
+
+  1. 按 Win + R，输入 cmd，回车，打开「命令提示符」。
+  2. 输入下面这一行（可复制粘贴），回车：
+
+     pip install numpy matplotlib igor2 pandas
+
+  3. 等待安装完成（出现 “Successfully installed ...” 即可）。
+
+  若你已经有「XPS_UPS」这个文件夹，并且里面有 requirements.txt：
+  - 在 cmd 里先进入该文件夹，例如：
+    cd 桌面\XPS_UPS
+    或
+    cd D:\XPS_UPS
+    （把路径改成你实际放 XPS_UPS 的路径）
+  - 再输入并回车：
+    pip install -r requirements.txt
+
+
+三、运行本程序
+-------------
+
+  1. 进入 XPS_UPS 文件夹（双击打开该文件夹）。
+  2. 双击「运行.bat」。
+  若没有 运行.bat，可以：
+  - 在该文件夹里，按住 Shift 再右键空白处，选「在此处打开 PowerShell 窗口」或「在终端中打开」；
+  - 输入：python XPS_UPS.py  然后回车。
+
+
+四、若提示「pip 不是内部或外部命令」
+-----------------------------------
+
+  说明 Python 没加到 PATH，可以这样装库：
+  1. 在「开始」里搜索「Python」，打开「Python 3.x」或「IDLE」。
+  2. 在打开的窗口里输入（一次一行，每行回车）：
+     import subprocess
+     subprocess.run(["pip", "install", "numpy", "matplotlib", "igor2", "pandas"])
+  3. 等执行完后再关掉，然后按上面「三」运行 运行.bat 或 python XPS_UPS.py。
+
+============================================
